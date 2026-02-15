@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { news } from "../../content/news";
 
-// Карточка одной новости
 function NewsCard({ date, title, text }) {
   return (
     <article className="flex flex-col">
@@ -24,11 +23,11 @@ export default function WelcomeNews() {
   const recentNews = news.slice(0, 2);
 
   return (
-    <section className="bg-white py-20">
-      <div className="max-w-6xl mx-auto px-12">
+    <section className="py-6">
+      <div className="max-w-6xl mx-auto px-12 text-center">
 
         <h2 className="text-2xl font-heading center font-semibold mb-14 text-dark">
-          Новости проекта
+          НОВОСТИ
         </h2>
 
         <div className="grid md:grid-cols-2 gap-12 relative">
@@ -47,10 +46,10 @@ export default function WelcomeNews() {
 
         </div>
 
-        <div className="mt-16 text-right">
+        <div className="mt-6 text-right">
           <Link
             to="/about/news"
-            className="text-sm font-semibold text-dark hover:text-slate-600 transition-colors"
+            className="h3 text-dark"
           >
             Все новости →
           </Link>

@@ -3,12 +3,11 @@ export const sections = {
   starling: {
     title: "STARLING",
     category: "about",
-    description: "Информация о проекте STARLING.",
+    description: " СТАРЛИНГ - программа, разработанная Сергеем Старостиным для работы с лингвистически ориентированными текстами и базами данных, поддерживающая разветвленную систему шрифтов для DOS и Windows.",
     content: [
       {
         type: "paragraph",
-        text: "Заглушка текста для страницы STARLING."
-      }
+        text: null }
     ]
   },
 
@@ -66,7 +65,7 @@ export const sections = {
         title: "Морфологический анализ",
         description: "Описание морфологического анализа русского языка.",
         content: [
-          { type: "paragraph", text: "Здесь находится подробная информация о морфологическом анализе." }
+          { type: "paragraph", text: "информация о морфологическом анализе." }
         ]
       },
       dictionaries: {
@@ -80,7 +79,7 @@ export const sections = {
         title: "Скачать ресурсы",
         description: "Страница для скачивания ресурсов.",
         content: [
-          { type: "paragraph", text: "Здесь можно скачать все необходимые материалы по русскому языку." }
+          { type: "paragraph", text: null }
         ]
       }
     }
@@ -91,7 +90,7 @@ export const sections = {
     category: "databases",
     description: "Базы данных по диалектам русского языка.",
     content: [
-      { type: "paragraph", text: "Заглушка описания раздела «Русские народные диалекты»." }
+      { type: "paragraph", text: null }
     ]
   },
 
@@ -100,7 +99,7 @@ export const sections = {
     category: "databases",
     description: "Этимологические базы данных.",
     content: [
-      { type: "paragraph", text: "Заглушка описания раздела «Этимология»." }
+      { type: "paragraph", text: null }
     ]
   },
 
@@ -109,7 +108,7 @@ export const sections = {
     category: "databases",
     description: "Базы данных по мифологическим мотивам.",
     content: [
-      { type: "paragraph", text: "Заглушка описания каталога мифологических мотивов." }
+      { type: "paragraph", text: null}
     ]
   },
 
@@ -118,7 +117,7 @@ export const sections = {
     category: "databases",
     description: "Базы данных по монгольскому языку.",
     content: [
-      { type: "paragraph", text: "Заглушка описания раздела «Монгольский язык»." }
+      { type: "paragraph", text: null }
     ]
   },
 
@@ -128,7 +127,7 @@ export const sections = {
     category: "resources",
     description: "Подборка полезных ссылок и материалов.",
     content: [
-      { type: "paragraph", text: "Заглушка текста страницы «Полезные ресурсы»." }
+      { type: "paragraph", text: null }
     ]
   },
 
@@ -137,7 +136,7 @@ export const sections = {
     category: "resources",
     description: "Информация о конференциях.",
     content: [
-      { type: "paragraph", text: "Заглушка текста страницы «Конференции»." }
+      { type: "paragraph", text: null }
     ]
   },
 
@@ -146,7 +145,7 @@ export const sections = {
     category: "resources",
     description: "Список публикаций.",
     content: [
-      { type: "paragraph", text: "Заглушка текста страницы «Публикации»." }
+      { type: "paragraph", text: null }
     ]
   },
   // ───────── хэдбар основной ─────────
@@ -223,17 +222,16 @@ export const sections = {
     category: "about",
     description: "Последние новости проекта.",
     content: [
-      { type: "paragraph", text: "Заглушка страницы «Новости»." }
+      { type: "paragraph", text: null }
     ]
   },
 
   contacts: {
     title: "Контакты",
     category: "about",
-    description: "Контактная информация проекта.",
+    description: "Для вопросов и предложений:",
     content: [
-      { type: "paragraph", text: "Заглушка страницы «Контакты»." },
-      { type: "paragraph", text: "mail." },
+      { type: "paragraph", text: "starling@rinet.ru" },
     ]
   },
 };

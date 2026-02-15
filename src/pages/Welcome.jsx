@@ -37,7 +37,7 @@ export default function Welcome() {
         Московская школа компаративистики
       </h1>
 
-      <p className="text-lg md:text-xl opacity-90 leading-relaxed">
+      <p className="text-lg text-white md:text-xl leading-relaxed">
         Международный интернет-проект, посвящённый
         сравнительно-историческому языкознанию
       </p>
@@ -47,7 +47,7 @@ export default function Welcome() {
 </section>
 
 
-      <main className="relative bg-white -mt-24 rounded-t-3xl shadow-lg">
+      <main className="relative bg-white -mt-24 rounded-t-3xl">
 
         <div className="max-w-6xl mx-auto px-6 py-6 space-y-24">
           <WelcomeCollections />

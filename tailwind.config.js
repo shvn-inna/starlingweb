@@ -8,7 +8,7 @@ export default {
   extend: {
     fontFamily: {
       body: ['Roboto', 'serif'],
-      heading: ['Mulish', 'sans-serif'],
+      heading: ['Montserrat', 'sans-serif'],
     },
     colors: {
         green: "#7B9669",

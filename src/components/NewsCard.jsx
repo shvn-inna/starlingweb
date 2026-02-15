@@ -2,7 +2,7 @@ export default function NewsCard({ date, title, text }) {
   return (
     <article className="bg-white rounded-2xl shadow-sm p-6 hover:shadow-md transition duration-200">
       {date && (
-        <p className="text-sm text-slate-400 mb-2">
+        <p >
           {date}
         </p>
       )}

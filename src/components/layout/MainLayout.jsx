@@ -1,6 +1,7 @@
 import HeaderMain from "../navigation/HeaderMain";
 import Sidebar from "../navigation/Sidebar";
 import HomeButton from "../navigation/HomeButton";
+import Footer from "../Footer";
 import { Outlet } from "react-router-dom";
 
 export default function MainLayout() {
@@ -16,6 +17,7 @@ export default function MainLayout() {
         <HomeButton />
       </div>
       </div>
+      <Footer />
     </div>
   );
 }

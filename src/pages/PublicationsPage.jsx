@@ -32,10 +32,11 @@ export default function PublicationsPage() {
         Публикации
       </h1>
 
-      <p className="text-slate-600 mb-12 max-w-2xl">
+      <p>
         Работы Московской школы компаративистики по сравнительно-историческому языкознанию,
         дальнему родству языков и лексикостатистике.
       </p>
+      
 
       <PublicationsFilters
         years={years}
