@@ -12,13 +12,13 @@ https://shvn-inna.github.io/starlingweb
 ## что используется
 
 ### Frontend
-React
-React Router
-Vite
-Tailwind CSS
-Node.js
-npm
-Git
+- React
+- React Router
+- Vite
+- Tailwind CSS
+- Node.js
+- npm
+- Git
 
 ---
 ## Текущая реализация
