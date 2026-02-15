@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import bg from "../assets/welcome-bg.png";
+import bg from "../assets/welcome-bg.jpg";
 import WelcomeCollections from "../components/welcome/WelcomeCollections";
 import WelcomeNews from "../components/welcome/WelcomeNews";
 import Footer from "../components/Footer";
