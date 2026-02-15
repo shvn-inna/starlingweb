@@ -3,11 +3,11 @@ import { HeaderMainNavigation } from "../../content/navigation";
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-60 bg-white border-b border-slate-300">
+    <header className="sticky top-0 z-60 bg-white border-b border-slate-200">
       <div className="max-w-8xl mx-auto px-4 py-3 flex items-left justify-between">
       <div className="max-w-8xl mx-0 px-4 py-3 flex items-left">
         <div className="flex items-center gap-2 mx-6">
-          <div className="logo" />
+          <div className="logo-black" />
           <h1 className="m-0 text-xl font-bold">
             Вавилонская башня
           </h1>

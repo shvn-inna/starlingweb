@@ -1,65 +1,62 @@
 import { Link } from "react-router-dom";
 import bg from "../assets/welcome-bg.png";
 import WelcomeCollections from "../components/welcome/WelcomeCollections";
-//import HeaderMain from "../components/navigation/HeaderMain"
+import WelcomeNews from "../components/welcome/WelcomeNews";
 import Footer from "../components/Footer";
 
 export default function Welcome() {
   return (
-    <div>
-      <header className=" z-50 bg-white border-b border-slate-200">
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-    
-        <div className="flex items-center gap-3">
-          <div className="logo" />
-          <h1 className="m-0 text-xl font-bold whitespace-nowrap">
-            Вавилонская башня
-          </h1>
-        </div>
+    <div className="flex flex-col min-h-screen">
 
-        <div className="text-sm font-semibold">
-          RU | EN
-        </div>
+      <section
+  className="relative h-[80vh] bg-cover bg-center"
+  style={{ backgroundImage: `url(${bg})` }}
+>
 
+  <div className="absolute inset-0 bg-black/50" />
+
+  <header className="absolute top-0 left-0 w-full z-20">
+    <div className="flex items-center justify-between px-8 py-6 text-white">
+      <div className="flex items-center gap-3">
+        <div className="logo-white" />
+        <span className="text-lg font-medium tracking-wide">
+          Вавилонская башня
+        </span>
       </div>
-      </header>
 
-          
-    <div
-      className="relative min-h-screen bg-cover bg-center flex flex-col"
-      style={{ backgroundImage: `url(${bg})` }}
-    >
-
-      <div className="absolute inset-0 bg-black/50"></div>
-      <div className="relative z-10 flex flex-col min-h-screen">
-        
-
-        <div className="flex-1 flex flex-col mt-20 items-center justify-center text-center px-6 text-white">
-          
-          <h1 className="h1">
-            Московская школа компаративистики
-          </h1>
-
-          <h2 className="h2">
-            международный интернет-проект, посвящённый сравнительно-историческому языкознанию
-          </h2>
-
-          <Link
-            to="/home"
-            className="button">
-            <div className="font-semibold">
-              Проект «Вавилонская башня»
-            </div>
-            <div className="text-sm text-slate-600">
-              Начать работу →
-            </div>
-          </Link>
-
-        </div>
-        <WelcomeCollections />
+      <div className="text-sm font-medium opacity-90 hover:opacity-100 transition">
+        RU | EN
       </div>
+
     </div>
-    <Footer />
+  </header>
+
+  <div className="relative z-10 h-full flex items-center justify-center text-center">
+    <div className="max-w-3xl px-6 text-white">
+      <h1>
+        Московская школа компаративистики
+      </h1>
+
+      <p className="text-lg md:text-xl opacity-90 leading-relaxed">
+        Международный интернет-проект, посвящённый
+        сравнительно-историческому языкознанию
+      </p>
+    </div>
+  </div>
+
+</section>
+
+
+      <main className="relative bg-white -mt-24 rounded-t-3xl shadow-lg">
+
+        <div className="max-w-6xl mx-auto px-6 py-6 space-y-24">
+          <WelcomeCollections />
+          <WelcomeNews />
+        </div>
+
+      </main>
+
+      <Footer />
     </div>
   );
 }

@@ -1,7 +1,17 @@
 
+import {
+  Database,
+  BookOpen,
+  Link as LinkIcon,
+  Presentation,
+  FileText,
+  Cpu
+} from "lucide-react";
+
 export const sidebarNavigation = [
   {
     title: "Базы данных",
+    icon: Database,
     items: [
       { label: "Русский язык", path: "/databases/russian" },
       { label: "Русские народные диалекты", path: "/databases/dialects" },
@@ -11,20 +21,22 @@ export const sidebarNavigation = [
     ],
   },
   {
-    title: "",
+    title: "Ресурсы",
+    icon: BookOpen,
     items: [
-      { label: "Полезные ресурсы", path: "/resources/resources" },
-      { label: "Конференции", path: "/resources/conferences" },
-      { label: "Публикации", path: "/resources/publications" },
+      { label: "Полезные ссылки", path: "/resources/resources", icon: LinkIcon },
+      { label: "Конференции", path: "/resources/conferences", icon: Presentation },
+      { label: "Публикации", path: "/resources/publications", icon: FileText },
     ],
   },
   {
     title: null,
     items: [
-      { label: "STARLING", path: "/about/starling" },
+      { label: "STARLING", path: "/about/starling", icon: Cpu },
     ],
   },
 ];
+
 
 export const HeaderMainNavigation = [
   { label: "О проекте", path: "/about/babel" },

@@ -6,34 +6,30 @@ export default function WelcomeCollections() {
       type: "БАЗА ДАННЫХ",
       title: "Русский язык",
       description: "Лексикостатистические и этимологические ресурсы",
-      path: "/databases/russian",
-      color: "dark"
+      path: "/databases/russian"
     },
     {
       type: "РАЗДЕЛ",
       title: "Конференции",
       description: "Программы и материалы научных мероприятий",
-      path: "/resources/conferences",
-      color: "dark"
+      path: "/resources/conferences"
     },
     {
       type: "ПРОЕКТ",
       title: "STARLING",
       description: "Система сравнительно-исторических баз данных",
-      path: "/about/starling",
-      color: "dark"
+      path: "/about/starling"
     },
     {
       type: "РЕСУРС",
       title: "Публикации",
       description: "Статьи и книги Московской школы компаративистики",
-      path: "/resources/publications",
-      color: "dark"
+      path: "/resources/publications"
     }
   ];
 
   return (
-    <section className=" mt-32 min-w-[800px] mx-auto px-1">
+    <section className="mt-32 max-w-6xl mx-auto px-6">
 
       <div className="mb-10">
         <h2 className="text-2xl font-heading font-semibold tracking-tight">
@@ -46,11 +42,21 @@ export default function WelcomeCollections() {
           <Link
             key={index}
             to={item.path}
-            className={`group relative h-64  overflow-hidden transition-all duration-300 transform hover:-translate-y-2 shadow-sm hover:shadow-xl ${item.color}`}
+            className="group relative h-64 overflow-hidden 
+                       bg-light 
+                       hover:bg-dark
+                       transition-colors duration-300"
           >
-            <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-black/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            {/* затемнение поверх цвета */}
+            <div className="absolute inset-0 bg-gradient-to-t 
+                            from-dark/40 to-transparent 
+                            opacity-0 group-hover:opacity-100 
+                            transition-opacity duration-300" />
 
-            <div className="absolute bottom-0 w-full p-8 text-white">
+            <div className="absolute bottom-0 w-full p-8 
+                            text-dark 
+                            group-hover:text-light 
+                            transition-colors duration-300">
 
               <span className="text-xs tracking-widest opacity-80 block mb-3">
                 {item.type}

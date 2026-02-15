@@ -3,44 +3,50 @@ import { sidebarNavigation } from "../../content/navigation";
 
 export default function Sidebar() {
   return (
-    <aside className="sticky top-20 h-auto w-64 bg-white border-r border-slate-300">
-      <nav className="p-4 space-y-10 text-m">
+    <aside className="w-64 min-h-screen
+border-r border-slate-200 bg-white">
+      <nav className="px-6 py-8 space-y-10 text-sm text-left">
+
         {sidebarNavigation.map((group, idx) => (
-          <div key={idx}>
-            {group.title && (
-              <div className="mb-2 font-semibold text-slate-500 uppercase tracking-wide text-m">
-                {group.title}
-              </div>
-            )}
+  <div key={idx}>
 
-            <ul className="space-y-3">
-              {group.items.map(item => (
-                <li key={item.path}>
-                  <NavLink
-                    to={item.path}
-                    className={({ isActive }) =>
-                      isActive
-                        ? "nav-link nav-link-active"
-                        : "nav-link"
-                    }
-                  >
-                    {item.label}
-                  </NavLink>
-                </li>
-              ))}
-            </ul>
-              
-          </div>
-        ))}
+    {group.title && (
+      <div className="mb-4 flex items-center gap-2 text-xs uppercase tracking-wide text-slate-500">
+        {group.icon && <group.icon size={14} />}
+        {group.title}
+      </div>
+    )}
+
+    <ul className="space-y-1">
+      {group.items.map(item => (
+        <li key={item.path}>
+          <NavLink
+            to={item.path}
+            className={({ isActive }) =>
+              `
+              flex items-center gap-3
+              px-3 py-2 rounded-md
+              transition-colors duration-200
+              ${
+                isActive
+                  ? "bg-light text-dark"
+                  : "text-slate-700 hover:bg-gray hover:text-dark"
+              }
+              `
+            }
+          >
+            {item.icon && <item.icon size={16} />}
+            {item.label}
+          </NavLink>
+        </li>
+      ))}
+    </ul>
+
+  </div>
+))}
+
+
       </nav>
-       <NavLink
-  to="/"
-  end
-  className="block mt-10 px-4 py-2 text-sm text-slate-600 hover:bg-slate-50 rounded transition"
->
-  На главную  
-
-</NavLink>
     </aside>
   );
 }
