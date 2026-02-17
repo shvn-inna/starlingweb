@@ -21,6 +21,12 @@ export default function WelcomeCollections() {
       title: "Публикации",
       description: "Статьи и книги Московской школы компаративистики",
       path: "/resources/publications"
+    },
+    {
+      type: "РЕСУРС",
+      title: "Поиск",
+      description: "Поисковая страница",
+      path: "/search"
     }
   ];
 
@@ -43,17 +49,14 @@ export default function WelcomeCollections() {
                        hover:bg-dark
                        transition-colors duration-300 rounded-xl"
           >
-            {/* Затемнение при наведении */}
             <div className="absolute inset-0 bg-gradient-to-t from-dark/40 to-transparent 
                             opacity-0 group-hover:opacity-100 
                             transition-opacity duration-300 rounded-xl" />
             
-            {/* Стрелка справа вверху */}
             <div className="absolute top-4 right-4 text-dark group-hover:text-light transition-colors duration-300">
               <ArrowRight size={24} />
             </div>
 
-            {/* Текст внизу слева */}
             <div className="absolute bottom-0 left-0 w-full p-6 
                             text-dark group-hover:text-light 
                             transition-colors duration-300">

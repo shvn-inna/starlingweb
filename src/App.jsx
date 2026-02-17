@@ -5,6 +5,7 @@ import SectionRoute from "./pages/SectionRoute";
 import NewsPage from "./pages/NewsPage";
 import ConferencesPage from "./pages/ConferencesPage";
 import PublicationsPage from "./pages/PublicationsPage";
+import Search from "./pages/Search";
 
 export default function App() {
   return (
@@ -23,6 +24,8 @@ export default function App() {
     <Route path="/resources/publications" element={<PublicationsPage />} />
     <Route path="/resources/conferences" element={<ConferencesPage />} />
     <Route path="/resources/:section" element={<SectionRoute />} />
+
+    <Route path="/search" element={<Search />} />
 
 </Route>
 
